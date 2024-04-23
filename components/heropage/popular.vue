@@ -2,7 +2,7 @@
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const { data: mangas } = await useLazyFetch("https://komiku-api.fly.dev/api/comic/popular/page/1");
+const { data: mangas } = await useLazyFetch("https://ranimev2-api.vercel.app/komiku/popular");
 </script>
 <template>
    <div>
