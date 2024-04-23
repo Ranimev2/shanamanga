@@ -1,7 +1,7 @@
 <script setup>
-const { id } = useRoute().params;
+const { endpoint } = useRoute().params;
 
-const { data: mangas } = await useFetch("https://komiku-api.fly.dev/api/comic/chapter/ch/" + id);
+const { data: mangas } = await useFetch("https://ranimev2-api.vercel.app/komiku/chapter" + endpoint);
 </script>
 <template>
    <main class="container">
@@ -12,7 +12,7 @@ const { data: mangas } = await useFetch("https://komiku-api.fly.dev/api/comic/ch
          <h2 class="font-semibold line-clamp-1">{{ mangas.data.title }}</h2>
       </div>
       <div class="flex flex-col gap-4 pb-4 pt-[86px]">
-         <div v-for="manga in mangas.data.image" :key="manga.id">
+         <div v-for="manga in mangas.data.image" :key="manga.endpoint">
             <img class="border-2 border-black" :src="manga" alt="komik manga" />
          </div>
       </div>
