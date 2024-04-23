@@ -1,5 +1,5 @@
 <script setup>
-const { data: anime } = await useFetch("https://komiku-api.fly.dev/api/comic/recommended/page/1");
+const { data: anime } = await useFetch("https://ranimev2-api.vercel.app/wibudesu/latest?page=1");
 </script>
 <template>
    <div>
