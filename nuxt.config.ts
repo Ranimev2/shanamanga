@@ -9,7 +9,7 @@ export default defineNuxtConfig({
    },
    app: {
       head: {
-         title: "IRATOON - Manga & Komik",
+         title: "TAKAMAIYA - Manga & Komik",
          charset: "utf-8",
          viewport: "width=device-width, initial-scale=1",
 
@@ -21,8 +21,8 @@ export default defineNuxtConfig({
    modules: ["@vite-pwa/nuxt", "nuxt-swiper"],
    pwa: {
       manifest: {
-         name: "IRATOON - Manga & Komik",
-         short_name: "IRATOON",
+         name: "Takamiya - Manga & Komik",
+         short_name: "Takamiya",
          start_url: ".",
          display: "standalone",
          theme_color: "#fff",
