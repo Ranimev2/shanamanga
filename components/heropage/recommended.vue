@@ -5,7 +5,7 @@ const { data: anime } = await useFetch("https://ranimev2-api.vercel.app/wibudesu
    <div>
       <h2 class="font-semibold mt-6">anime latest</h2>
       <div class="flex flex-col gap-4 mt-4">
-         <NuxtLink :to="anime.endpoint" class="flex gap-4 p-4 shadow-card hover:shadow-xl hover:shadow-black/10 transition duration-300 rounded-xl bg-white items-center" v-for="manga in anime.data" :key="anime.id">
+         <NuxtLink :to="anime.endpoint" class="flex gap-4 p-4 shadow-card hover:shadow-xl hover:shadow-black/10 transition duration-300 rounded-xl bg-white items-center" v-for="anime in anime.data" :key="anime.id">
             <img class="w-20 h-20 object-cover rounded-md" :src="anime.image" :alt="'thumbnail' + anime.title" />
 
             <div>
