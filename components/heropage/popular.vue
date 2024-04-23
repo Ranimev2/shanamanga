@@ -2,7 +2,7 @@
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const { data: mangas } = await useLazyFetch("https://ranimev2-api.vercel.app/komiku/popular");
+const { data: mangas } = await useLazyFetch("https://ranimev2-api.vercel.app/wibudesu/popular?page=1");
 </script>
 <template>
    <div>
