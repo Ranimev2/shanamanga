@@ -1,7 +1,7 @@
 <script setup>
 const { id } = useRoute().params;
 
-const { data: mangas } = await useFetch("https://ranimev2-api.vercel.app/komiku/chapter" + endpoint);
+const { data: mangas } = await useFetch("https://komiku-api.fly.dev/api/comic/chapter/ch/" + id);
 </script>
 <template>
    <main class="container">
